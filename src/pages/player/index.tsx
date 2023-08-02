@@ -1,4 +1,4 @@
-import { Header } from '~/components'
+import { Header, Main } from '~/components'
 
 export default function Player() {
   return (
@@ -8,7 +8,7 @@ export default function Player() {
           <Header />
         </div>
 
-        <main></main>
+        <Main />
       </div>
     </div>
   )
