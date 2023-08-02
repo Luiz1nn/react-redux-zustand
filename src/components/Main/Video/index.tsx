@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo'
 import Player from 'react-player'
 import { useDispatch } from 'react-redux'
-import { next, useCurrentLesson } from '~/store/slices'
+import { next, useCurrentLesson } from '~/store'
 
 export function Video() {
   const dispatch = useDispatch()

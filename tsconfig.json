@@ -16,7 +16,6 @@
     "incremental": true,
     "paths": {
       "~/store": ["./src/store"],
-      "~/store/*": ["./src/store/*"],
       "~/components": ["./src/components"]
     }
   },

@@ -1,5 +1,5 @@
 import { MessageCircle } from 'lucide-react'
-import { useCurrentLesson } from '~/store/slices'
+import { useCurrentLesson } from '~/store/slices/player'
 
 export function Header() {
   const { currentModule, currentLesson } = useCurrentLesson()

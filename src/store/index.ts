@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { TypedUseSelectorHook, useSelector } from 'react-redux'
-import { player } from './slices'
+import { player } from './slices/player'
 
 export const store = configureStore({
   reducer: {
@@ -10,3 +10,5 @@ export const store = configureStore({
 
 export type RootState = ReturnType<typeof store.getState>
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
+
+export * from './slices/player'
