@@ -60,4 +60,14 @@ describe('player slice', () => {
     expect(currentModuleIndex).toEqual(1)
     expect(currentLessonIndex).toEqual(0)
   })
+
+  it('should not update the current module and lesson index if there is no next lesson avaiable', () => {
+    const { currentModuleIndex, currentLessonIndex } = reducer(
+      { ...exampleState, currentModuleIndex: 1, currentLessonIndex: 1 },
+      next(),
+    )
+
+    expect(currentModuleIndex).toEqual(1)
+    expect(currentLessonIndex).toEqual(1)
+  })
 })
