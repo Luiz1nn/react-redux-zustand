@@ -1,14 +1,11 @@
-'use client'
-
 import { Provider as ReduxProvider } from 'react-redux'
-import { TodoList, AddTodo } from '~/components'
 import { store } from '~/store'
+import Player from './player'
 
 export default function Home() {
   return (
     <ReduxProvider store={store}>
-      <TodoList />
-      <AddTodo />
+      <Player />
     </ReduxProvider>
   )
 }
